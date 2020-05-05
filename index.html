@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dd.php">
+</head>
+<body>
+    <div id="back">
+        <div id="leftback">
+            <div id="leftnav">
+                <img src="hat.png" alt="logo">
+                <div id="leftnavlink">
+                    <a href="#">why join us?</a>
+                    <a href="#">future in us</a>
+                    <a href="#">Eligibility</a>
+                </div>
+            </div>
+            <div id="leftmain">
+                <div id="lefthead">
+                    <h1>Everything In Navy</h1>
+                </div>
+                <div id="leftbody">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  laborum nulla ea amet dicta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur  elit. Id nesciunt nulla, illo  autem rem labore exercitationem amet quos vitae, voluptatum quam. </p>
+                </div>
+            </div>
+        </div>
+        <div id="rightback">
+            <div id="rightoverlay">
+                <div id="rightnav">
+                    <a href="#">Sign In</a>
+                    <a href="#">download</a>
+                </div>
+                <div id="rightbody">
+                    <div id="form">
+                        <form>
+                            <i class="fa fa-lock"><span> Sign-up now</span></i>
+                            <h4>Get exclusive merchandise for free</h4>
+                            <input type="text" class="entry" placeholder="User id"> <br>
+                            <input type="password" class="entry" placeholder="password" name="" id=""> <br>
+                            <input type="checkbox" name="remember me" id="">
+                             <span> remember me</span><br>
+                            <input type="checkbox" name="I accept the Term and conditions" id="">
+                             <span> I accept the Term and conditions</span> <br>
+                            <input type="button" value="log in" id="loginbutton">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script>
+        var tl = new TimelineMax();
+        tl
+        .fromTo( '#form' , 1.2 , {
+            top : '-100%' 
+        } , {
+            top : '5%' ,
+            ease : Expo.easeInOut
+        } )
+    </script>    
+</body>
+</html>
